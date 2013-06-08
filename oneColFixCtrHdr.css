@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+body {
+	background-color: #ececec;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	font-family: "Senta Schreibmaschine";
+	font-size: 100%;
+	line-height: 1.4;
+	background-image:url('bg.png');
+	position: relative;
+	overflow:hidden;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { 
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+.header {
+	font-size: 600%;
+	margin-left: 6%;
+	color: #e0e0e0;
+	line-height: 1.0;
+}
+
+.subtitle {
+	font-size:170%;
+	color: #e0e0e0;
+	margin-left: 3%;
+}
+
+.slide {
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+	margin: 0 auto;
+	white-space: nowrap
+}
+
+.slideshow {
+	margin-left: 3%;
+	margin-top: 5%;
+	margin-bottom: 6%;
+}
+
+img {
+	margin-right: 1.5%;
+	margin-left: 1.5%;
+	display: inline;
+}
+
+#nav {
+	margin-left: 90%;
+}
+
+.content {
+}
+
+.footer {
+}
+
+.portrait {
+	position: absolute;
+	height: 60%;
+	width: 70%;
+	pointer-events: none;
+	background: url('portrait.png');
+	background-repeat:no-repeat;
+	background-size: contain;
+	z-index: 100;
+	margin-bottom: 0px;
+	bottom: 0px;
+}
+
+.credit {
+	padding-left: 42%;
+}
+
+@font-face {
+	font-family: 'Senta Schreibmaschine';
+	src: url('senta_martavaneckcu-webfont.eot');
+	src: url('senta_martavaneckcu-webfont.eot?#iefix') format('embedded-opentype'),
+		url('senta_martavaneckcu-webfont.woff') format('woff'),
+		url('senta_martavaneckcu-webfont.ttf') format('truetype'),
+		url('senta_martavaneckcu-webfont.svg') format('svg');
+}
