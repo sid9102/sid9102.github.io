@@ -1,109 +1,25 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en" >
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="icon" 
-      type="image/png" 
-      href="favicon.png">
-
-<title>Sidhant Srikumar</title>
-
-<link href="oneColFixCtrHdr.css" rel="stylesheet" type="text/css" />
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-<script src="http://malsup.github.com/jquery.cycle.all.js"></script>
-
-<script type="text/javascript">
-$(document).ready(function() {
-    $('.slideshow').cycle({
-		fx: 'fade',
-		timeout: 10000,
-		pager: '#nav'
-	});
-	$('#facebook').on({
-    'mouseover' : function() {
-      $(this).attr('src','facebooks.png');
-    },
-    mouseout : function() {
-  $(this).attr('src','facebook.png');
-    }
-  });
-  $('#linkedin').on({
-    'mouseover' : function() {
-      $(this).attr('src','linkedins.png');
-    },
-    mouseout : function() {
-  $(this).attr('src','linkedin.png');
-    }
-  });
-  $('#googleplay').on({
-    'mouseover' : function() {
-      $(this).attr('src','googleplays.png');
-    },
-    mouseout : function() {
-  $(this).attr('src','googleplay.png');
-    }
-  });
-  $('#github').on({
-    'mouseover' : function() {
-      $(this).attr('src','githubs.png');
-    },
-    mouseout : function() {
-  $(this).attr('src','github.png');
-    }
-  });
-  $('#lastfm').on({
-    'mouseover' : function() {
-      $(this).attr('src','lastfms.png');
-    },
-    mouseout : function() {
-  $(this).attr('src','lastfm.png');
-    }
-  });
-  $('#tumblr').on({
-    'mouseover' : function() {
-      $(this).attr('src','tumblrs.png');
-    },
-    mouseout : function() {
-  $(this).attr('src','tumblr.png');
-    }
-  });
-});
-</script>
+  <meta charset="UTF-8">
+  <title>CodePen - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Bungee" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
 
 </head>
-
 <body>
-
+<!-- partial:index.partial.html -->
 <div class="container">
-  <div class="header">sidhant srikumar</div>
-  <div class = "subtitle"><p> Senior at the University of Texas, programmer, music lover, gamer, and technology enthusiast</p></div>
+  <h1 class="header">Sidhant Srikumar</h1>
+  <p>Generalist Software Engineer | Entrepreneur | Salt Lake City, UT</p>
+  <div class="icons-social">
+			<a target="_blank" href="https://github.com/sid9102"><i class="fab fa-github"></i></a>
+			<a target="_blank" href="https://www.linkedin.com/in/sidhants/"><i class="fab fa-linkedin"></i></a>
+    <a target="_blank" href="mailto:sid9102@gmail.com"><i class="fa fa-envelope"></i></a>
+    </div>
+</div>
+<!-- partial -->
   
-  <div class="content">
-	
-    <div class="slideshow">
-		<div class="slide">
-			<a href="http://facebook.com/sidhant"><img id ="facebook" src="facebook.png"/></a>
-			<a href="http://www.linkedin.com/pub/sidhant-srikumar/3b/66b/627"><img id="linkedin" src="linkedin.png" /></a>
-			<a href="https://play.google.com/store/apps/developer?id=Silly+Little+Toys"><img id="googleplay" src="googleplay.png" /></a>
-		</div>
-		<div class="slide">
-			<a href="https://github.com/sid9102"><img id ="github" src="github.png" /></a>
-			<a href="http://www.last.fm/user/sid9102"><img id="lastfm" src="lastfm.png" /></a>
-			<a href="http://albumartforbandsthatdontexist.tumblr.com/"><img id="tumblr" src="tumblr.png" /></a>
-		</div>
-	</div>
-    <div id="nav"></div>
-    
-  <!-- end .content --></div>
-  
-  <div class="footer">    
-    <svg id="FOREGROUND_DIV" class="portrait">
-      <span>&nbsp;</span>
-    </svg>
-    <div class ="credit"> Designed by Sidhant Srikumar, Portrait by <a href="http://artdonebyswati.tumblr.com">Swati Srikumar</a></div>
-    <!-- end .footer --></div>
-  <!-- end .container --></div>
 </body>
 </html>
